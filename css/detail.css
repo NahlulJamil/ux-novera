@@ -1,0 +1,109 @@
+/* =====================
+   DETAIL PRODUCT PAGE
+   (ISOLATED CSS)
+===================== */
+
+.detail-page {
+    background: #fff;
+    position: relative;
+}
+
+/* IMAGE BOX */
+.detail-page .detail-image-box {
+    background: #f4f4f4;
+    border-radius: 20px;
+    padding: 32px;
+    height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-page .detail-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* tidak gepeng */
+}
+
+/* CATEGORY */
+.detail-page .detail-category {
+    border: 1px solid #111;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+/* BRAND & NAME */
+.detail-page .detail-brand {
+    font-family: 'Inria Serif', serif;
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+
+.detail-page .detail-name {
+    font-size: 16px;
+    color: #666;
+}
+
+/* PRICE */
+.detail-page .detail-price {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* SIZE */
+.detail-page .detail-size-group {
+    display: flex;
+    gap: 12px;
+}
+
+.detail-page .detail-size-btn {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px 24px;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.detail-page .detail-size-btn.active,
+.detail-page .detail-size-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* DESCRIPTION */
+.detail-page .detail-desc {
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detail-page .detail-desc h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.detail-page .detail-desc p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .detail-page .detail-image-box {
+        height: 420px;
+        padding: 20px;
+    }
+}
+.back-fixed {
+    position: absolute;
+    top: -10px;
+    left: 8;
+    z-index: 10;
+}
+

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Serif', 'Georgia', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    height: 650px;
+    background: #fff;
+}
+
+/* Sisi Gambar */
+.image-section {
+    flex: 1.1;
+    position: relative;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px; /* Memberikan lekukan di sudut gambar */
+}
+
+.box-label {
+    position: absolute;
+    bottom: 35%;
+    right: 15%;
+    color: #8b5e3c;
+    font-size: 11px;
+    transform: rotate(-10deg);
+    max-width: 100px;
+    opacity: 0.8;
+}
+
+/* Sisi Form */
+.form-section {
+    flex: 0.9;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand {
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: #444;
+    font-size: 13px;
+}
+
+/* Gaya Input */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #d9b8af;
+    border-radius: 12px;
+    background-color: #fff9f8; /* Pink pucat sesuai gambar */
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #8b5e3c;
+}
+
+/* Tombol Register */
+.register-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #8b5e3c; /* Warna cokelat kayu tanah */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.3s;
+}
+
+.register-btn:hover {
+    opacity: 0.9;
+}

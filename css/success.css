@@ -1,0 +1,76 @@
+
+.success-wrapper {
+    background: linear-gradient(180deg, #5c4033 0%, #2b1d16 100%);
+    min-height: 100vh; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.success-card {
+    background: #fff;
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.check-circle {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #5c4033;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+    color: #5c4033;
+    font-size: 40px;
+}
+
+.success-card h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.success-card .message {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-back-home {
+    display: inline-block;
+    background: linear-gradient(90deg, #8b5a44 0%, #3a261c 100%);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 80px;
+    border-radius: 12px;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-back-home:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+@media (max-width: 576px) {
+    .btn-back-home {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .success-card h2 {
+        font-size: 1.8rem;
+    }
+}

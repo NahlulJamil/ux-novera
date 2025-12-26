@@ -1,0 +1,168 @@
+/* =====================
+   NAVBAR (FINAL FIX)
+===================== */
+
+body {
+    padding-top: 90px; /* karena navbar fixed-top */
+}
+
+.navbar.navbar-fashion {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* LOGO */
+.brand-logo {
+    font-family: 'Inria Serif', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* MENU */
+.nav-fashion {
+    font-family: 'Inria Serif', serif;
+    color: #111 !important;
+    position: relative;
+    padding-bottom: 2px;
+    font-size: 1.05rem;
+}
+
+.nav-fashion::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1.5px;
+    background: #111;
+    transition: width .3s ease;
+}
+
+.nav-fashion:hover::after,
+.nav-fashion.active::after {
+    width: 100%;
+}
+
+/* ICON */
+.icon {
+    color: #111;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: transform .25s ease, opacity .25s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    opacity: .75;
+}
+
+/* SEARCH */
+.search-box {
+    position: relative;
+    width: 240px;
+}
+
+.search-box input {
+    padding-left: 45px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    font-family: 'Inria Serif', serif;
+}
+
+.search-box input:focus {
+    box-shadow: none;
+    border-color: #111;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+/* MOBILE SEARCH */
+.mobile-search input {
+    height: 42px;
+    background-color: #fff;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    object-fit: cover;
+}
+.btn-outline-dark:hover .iconify {
+    transform: scale(1.15);
+    transition: 0.2s;
+}
+/* =====================
+   PRODUCT CARD
+===================== */
+
+.product-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 360px;              /* KUNCI: tinggi seragam */
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f3f3f3;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+}
+
+/* zoom image */
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+/* overlay */
+.product-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.08);
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.product-card:hover .product-image::after {
+    opacity: 1;
+}
+
+/* body card */
+.product-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* button stay bawah */
+.product-card button {
+    margin-top: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .product-image {
+        height: 220px;
+    }
+}
