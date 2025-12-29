@@ -1,6 +1,5 @@
 /* =====================
    DETAIL PRODUCT PAGE
-   (ISOLATED CSS)
 ===================== */
 
 .detail-page {
@@ -22,7 +21,7 @@
 .detail-page .detail-image-box img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* tidak gepeng */
+    object-fit: contain;
 }
 
 /* CATEGORY */
@@ -60,12 +59,12 @@
 }
 
 .detail-page .detail-size-btn {
-    border: none;
-    background: #f1f1f1;
+    border: 1px solid #000;
+    background: #fff;
     padding: 10px 24px;
     border-radius: 20px;
-    transition: 0.2s;
     cursor: pointer;
+    transition: 0.25s ease;
 }
 
 .detail-page .detail-size-btn.active,
@@ -100,10 +99,11 @@
         padding: 20px;
     }
 }
+
+/* BACK BUTTON */
 .back-fixed {
     position: absolute;
     top: -10px;
-    left: 8;
+    left: 8px;
     z-index: 10;
 }
-

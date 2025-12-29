@@ -76,6 +76,10 @@
             <a href="../../profile.html" class="icon">
                 <span class="iconify" data-icon="lucide:user" data-width="28"></span>
             </a>
+            <div class="language-switcher">
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('id')">ID</button>
+</div>
         </div>
 
     </div>
@@ -199,8 +203,9 @@
             </a>
         </div>
 </section>
-<footer class="bg-light py-5 mt-5">
-    <div class="container-fluid px-5">
+
+    <footer class="bg-light py-5 mt-0">
+    <div class="container-fluid">
         <div class="row gy-4">
 
             <div class="col-md-4">
@@ -212,19 +217,17 @@
 
             <div class="col-md-4">
                 <h6 class="fw-semibold">Service</h6>
-                <p class="small mb-1">Help</p>
-                <p class="small mb-1">How To Return</p>
-                <p class="small mb-1">Brands on Novera</p>
-                <p class="small mb-1">Contact Us</p>
-                <p class="small mb-1">About Us</p>
+                <a href="../../help.html" style="text-decoration: none; color: black;"><p class="small mb-1">Help</p></a>
+                <a href="../../product/index.html" style="text-decoration: none; color: black;"><p class="small mb-1">Product on Novera</p></a>
+                <a href="https://chat.whatsapp.com/DTHPDjz5ec0AIzY7wRAIx8" target="_blank" style="text-decoration: none; color: black;"><p class="small mb-1">Contact Us</p></a>
+                <a href="../../aboutUs.html" style="text-decoration: none; color: black;"><p class="small mb-1">About Us</p></a>
             </div>
-
             <div class="col-md-4">
                 <h6 class="fw-semibold">Find Us</h6>
                 <div class="d-flex gap-3">
-                    <span class="iconify" data-icon="mdi:instagram"></span>
-                    <span class="iconify" data-icon="mdi:twitter"></span>
-                    <span class="iconify" data-icon="mdi:facebook"></span>
+                    <a href="https://www.instagram.com/novera_fashionn?igsh=MnE3eDJxYTU3MHJi" target="_blank" style="color: black;"><span class="iconify" data-icon="mdi:instagram"></span></a>
+                    <a href="https://chat.whatsapp.com/DTHPDjz5ec0AIzY7wRAIx8" target="_blank" style="color: black;"><span class="iconify" data-icon="mdi:twitter"></span></a>
+                    <a href="https://www.facebook.com/profile.php?id=100067856435515" target="_blank" style="color: black;"><span class="iconify" data-icon="mdi:facebook"></span></a>
                     <span class="iconify" data-icon="mdi:tiktok"></span>
                 </div>
             </div>
@@ -232,6 +235,25 @@
         </div>
     </div>
 </footer>
+<script>
+function setLanguage(lang) {
+    document.cookie = "googtrans=/en/" + lang + ";path=/";
+    location.reload();
+}
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
